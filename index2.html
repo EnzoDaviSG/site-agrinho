@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nós</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">×</button>
+        <img src="imagens/logo.png" alt="Logo Sidebar" class="sidebar-logo">
+        <a href="index.html">Home</a>
+        <a href="index2.html">Sobre nós</a>
+    </div>
+
+    <header>
+            <div class="header2">
+                <button class="menu-icon" onclick="toggleSidebar()">☰</button>
+                <img src="imagens/logo.png" alt="imagem-da-bandeira" class="header-logo" style="border: 5px solid #000;">
+            </div>
+            <h1>São José dos Pinhais! Uma Cidade Agro!</h1>
+            <div class="tema-selector">
+                <label for="tema">Tema:</label>
+                <select id="tema" onchange="mudarTema()">
+                    <option value="sol">pôr do sol</option>
+                    <option value="escuro">Escuro</option>
+                </select>
+            </div>
+    </header>
+
+    <main>
+        <section class="sobre">
+            <h1>Sobre nós:</h1>
+            <img src="imagens/silveira_da_motta.jpeg" alt="imagem do colegio silveira da motta">
+            <br>
+            <a href="https://www.guiasjp.com/instituicoes/prefeitura/noticias/colegio+silveira+da+motta+comemora+11+anos+de+historia/95250">postagem original da imagem</a>
+            <ul>
+               <p class="sobre1">Somos estudantes do Colégio Municipal Silveira da Motta. Neste projeto, temos como objetivo apresentar um pouco da nossa cidade e sua contribuição para a área agrícola e suas tecnologias.
+                </p>
+                <a href="https://aluno.escoladigital.pr.gov.br/EnsinoMedio/Endereco/SILVEIRA-DA-MOTTA-C-E-EF-M-1">Nosso colegio!</a>
+            </ul>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

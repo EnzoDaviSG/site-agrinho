@@ -9,53 +9,85 @@
 <body>
     <div id="sidebar" class="sidebar">
         <button class="close-btn" onclick="toggleSidebar()">×</button>
-        <img src="logo.png" alt="Logo Sidebar" class="sidebar-logo">
-        <a href="#">Home</a>
-        <a href="#">Cidade</a>
-        <a href="#">Agro</a>
-        <a href="#">Sobre nós</a>
+        <img src="imagens/logo.png" alt="Logo Sidebar" class="sidebar-logo">
+        <a href="index.html">Home</a>
+        <a href="#cidade">Cidade</a>
+        <a href="#agro">Agro</a>
+        <a href="index2.html">Sobre nós</a>
     </div>
 
     <header>
-        <header>
-            <div class="header-group">
+            <div>
                 <button class="menu-icon" onclick="toggleSidebar()">☰</button>
-                <img src="logo.png" alt="imagem-da-bandeira" class="header-logo" style="border: 5px solid #000;">
+                <img src="imagens/logo.png" alt="imagem-da-bandeira" class="header-logo">
             </div>
             <h1 class="header-mensagem">São José dos Pinhais! Uma Cidade Agro!</h1>
-        </header>
+            <div class="tema-selector">
+                <label for="tema">Tema:</label>
+                <select id="tema" onchange="mudarTema()">
+                    <option value="sol">pôr do sol</option>
+                    <option value="escuro">Escuro</option>
+                </select>
+            </div>
     </header>
 
     <main>
-        <section id="support">
+        <section id="cidade">
             <h1>Cidade</h1>
-            <ul>
-               <p>a</p>
-            </ul>
-        </section>
-
-        <section id="book-club">
-            <h2>Clube do livro</h2>
-            <h3>Votação</h3>
-            <div class="book-vote">
-                <div class="book">
-                    <img src="book.png" alt="Livro 1">
-                    <p><strong>*nome do livro*</strong><br>*autor*</p>
-                </div>
-                <div class="book">
-                    <img src="book.png" alt="Livro 2">
-                    <p><strong>*nome do livro*</strong><br>*autor*</p>
-                </div>
-                <div class="book">
-                    <img src="book.png" alt="Livro 3">
-                    <p><strong>*nome do livro*</strong><br>*autor*</p>
-                </div>
-            </div>
+            <img src="imagens/caixa de agua.jpg" alt="imagem da caixa d'água de São José dos Pinhais" class="imagens-principais">
+            <br>
+            <a href="https://www.facebook.com/photo.php?fbid=1956311894435433&id=150887988311175&set=a.346639125402726">postagem original da imagem</a>
+               <p>Bem-vindo a São José dos Pinhais, uma importante cidade da Região Metropolitana de Curitiba!
+                Com forte crescimento urbano e industrial, nossa cidade também se destaca pela presença do setor agrícola, que faz parte da sua história e identidade.
+                Vou mostrar como a convivência entre o campo e a cidade se conecta no nosso dia a dia, desde a produção até a tecnologia no campo.
+                Neste espaço, queremos mostrar como São José dos Pinhais une tradição e inovação, valorizando suas raízes rurais.
+                Acompanhe e descubra como o agro está presente em cada parte da nossa cidade! </p>
         </section>
     </main>
+    <main>
+        <section id="agro">
+            <h1>Agro</h1>
+            <img src="imagens/imagem_de_drone.jpeg" alt="Imagem de drone de fazenda" class="imagens-principais">
+            <br>
+            <p class="p-2">Imagem está associada ao texto</p>
+            <a href="https://www.agricultura.pr.gov.br/Noticia/Brocolis-e-couve-flor-de-Sao-Jose-dos-Pinhais-se-destacam-no-Estado">postagem original da imagem</a>
+               <p>O agro é uma das maiores forças econômicas e culturais de São José dos Pinhais.
+                A cidade possui uma área rural expressiva, com pequenas e médias propriedades que produzem hortaliças, frutas, grãos e flores.
+                 Esses produtos abastecem feiras locais, mercados da Região Metropolitana e até outras partes do estado.
+                Além da produção agrícola, a criação de animais e a agroindústria também têm papel importante na economia local, gerando empregos e movimentando a comunidade. </p>
+                <img src="imagens/imagem_de_drone2.jpeg" alt="Imagem de outro drone" class="imagens-principais">
+                <br>
+                <p class="p-2">Imagem não está associada ao texto</p>
+                <a href="https://opresenterural.com.br/com-aporte-de-r-30-milhoes-parana-incrementa-agricultura-e-turismo-em-sao-jose-dos-pinhais/">postagem original da imagem</a>
+                <p>A relação entre o campo e a cidade é muito próxima e visível no cotidiano.
+                    Muitas famílias vivem do cultivo da terra, utilizando técnicas tradicionais aliadas a novas tecnologias sustentáveis.
+                     Escolas, feiras e eventos locais promovem essa conexão, reforçando o orgulho da população pela vida no campo.
+                     O agro em São José dos Pinhais não é apenas uma atividade econômica, mas também uma herança cultural que fortalece a identidade da cidade.</p>
 
+                     <img src="imagens/imagem-agro.jpeg" alt="Imagem de outro drone" class="imagens-principais">
+                     <br>
+                     <p class="p-2">Imagem está associada ao texto</p>
+                     <a href="https://grandecuritiba.info/sao-jose-dos-pinhais/2023/07/07/sao-jose-dos-pinhais-e-o-maior-produtor-de-morangos-do-parana">postagem original da imagem</a>
+                     <p>A cidade de São José dos Pinhais exerce um papel fundamental no fortalecimento do setor agro por meio de políticas públicas, investimentos em infraestrutura e programas de incentivo direto aos produtores.
+                         Um exemplo emblemático é o Programa Plante Mais, coordenado pela Secretaria Municipal de Abastecimento e Agricultura (Semag),
+                         que subsidia até 80% da compra de mudas de morango (variedades San Andreas e Albion) e já entregou cerca de 300 mil mudas a 278 agricultores familiares,
+                     consolidando o município como o maior produtor de morangos do Paraná em 2021, com 4,7 mil toneladas e um Valor Bruto de Produção (VBP) de R$ 42,9 milhões. </p>
+                     <img src="imagens/foto.jpeg" alt="Imagem de outro drone" class="imagens-principais">
+                     <br>
+                     <p class="p-2">Imagem está associada ao texto</p>
+                     <a href="https://www.agricultura.pr.gov.br/Noticia/Brocolis-e-couve-flor-de-Sao-Jose-dos-Pinhais-se-destacam-no-Estado">postagem original da imagem</a>
+                     <br>
+                     <a href="https://www.aen.pr.gov.br/Audio/Brocolis-e-couve-flor-de-Sao-Jose-dos-Pinhais-se-destacam-na-mesa-dos-paranaenses">mais sobre</a>
+                     <p>Além disso, a prefeitura mantém serviços de assistência técnica e extensão rural, promove feiras de produtos locais e investe na manutenção de estradas vicinais e sistemas de irrigação,
+                         garantindo que a produção — que em 2019 alcançou 319,6 mil toneladas de hortaliças, equivalente a 11% da safra paranaense — chegue com qualidade e pontualidade aos mercados de Curitiba e região metropolitana,
+                          gerando cerca de R$ 528 milhões em receita para o município. </p>
+
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Rede de Apoio Psicológico</p>
+        <p>Projeto Educacional | Colégio Municipal Silveira da Motta</p>
+        <p>São José dos Pinhais - PR</p>
+        <p>Desenvolvido por estudantes para fins educacionais.</p>
     </footer>
     <script src="scripts.js"></script>
 </body>
